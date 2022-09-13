@@ -1,5 +1,5 @@
-# logserver
-for upload log content ,for debug
+# bakphotondb
+for upload and down photon db ,for debug
 
 usage:
 
