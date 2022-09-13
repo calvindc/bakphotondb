@@ -3,10 +3,7 @@ for upload log content ,for debug
 
 usage:
 
-get /logsrv/1/assignid 
-
-assign a new id
-
-put /logsrv/1/log/:address/:id
-
-to upload log content, these content will be write to file address-id.log
+		rest.Get("/cloud-server/api/assignid", AssignID),
+		rest.Post("/cloud-server/api/log/:address/:id", Log),
+		rest.Post("/cloud-server/api/download/:address", dbDownload),
+		rest.Post("/cloud-server/api/upload", dbUpLoad),
